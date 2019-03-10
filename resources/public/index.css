@@ -1,0 +1,63 @@
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+textarea {
+  color: #558;
+  background-color: #282a36;
+  border: none;
+}
+
+.app {
+  display: grid;
+  height: calc(100vh - 5rem);
+  width: calc(100vw - 2rem);
+  padding: 2.5rem 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  grid-template-areas:
+    "editor result"
+    "editor log"
+    "editor compiled";
+}
+.editor {
+  grid-area: editor;
+}
+.compiled {
+  grid-area: compiled;
+}
+.result {
+  grid-area: result;
+}
+.log {
+  grid-area: log;
+}
+
+.editor {
+  font-size: 1.1rem;
+}
+.log,
+.result,
+.compiled {
+  font-size: 1rem;
+  overflow: scroll;
+  word-wrap: break-word;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.result {
+  font-size: 1rem;
+}
+
+.ace-dracula .ace_gutter-active-line {
+  background-color: transparent;
+  text-indent: -9999px;
+}

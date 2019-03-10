@@ -1,0 +1,7 @@
+{:main example.core
+
+ :infer-externs true
+
+ ;; help debugging :optimizations advanced
+ :pseudo-names true
+ :pretty-print true}

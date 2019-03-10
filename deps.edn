@@ -1,0 +1,17 @@
+{:deps {org.clojure/clojure       {:mvn/version "1.10.0"}
+        org.clojure/clojurescript {:mvn/version "1.10.520"}
+        com.bhauman/figwheel-main {:mvn/version "0.2.0"}
+
+        ;; deps
+        binaryage/oops {:mvn/version "0.7.0"}
+
+        ;; improved repl
+        com.bhauman/rebel-readline-cljs {:mvn/version "0.1.4"}
+
+        ;; for emacs jack-in
+        cider/cider-nrepl {:mvn/version "0.20.0"}
+        nrepl/nrepl       {:mvn/version "0.4.4"}
+        refactor-nrepl    {:mvn/version "2.4.0"}
+        cider/piggieback  {:mvn/version "0.4.0"}}
+
+ :paths ["src" "resources" "target"]}
