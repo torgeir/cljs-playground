@@ -6,4 +6,4 @@ A playground that compiles your cljs in the browser, shows the resulting js and 
 
 # run it
 
-clojure -m figwheel.main -b dev
+`clojure -m figwheel.main -b dev`
