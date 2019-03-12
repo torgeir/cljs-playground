@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon"type="image/x-icon" href="data:image/x-icon;,">
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+
+    <div class="app">
+      <pre class="editor">(ns cljs.user)
+
+
+(+ 1 2)
+
+
+(doall (map str (range 0 10)))
+
+
+(defn up []
+  1)
+
+
+(def interval
+  (let [state (atom 0)]
+    (js/setInterval
+      (fn []
+        (swap! state (partial + (up)))
+        (prn @state))
+      100)))
+
+
+(js/clearInterval interval)</pre>
+      <pre class="result"></pre>
+      <textarea class="log"></textarea>
+      <pre class="compiled"></pre>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.3/ace.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.3/mode-clojure.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.3/mode-javascript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.3/theme-dracula.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.3/snippets/clojure.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.3/ext-beautify.js"></script>
+    <script src="cljs-out/dev-main.js" type="text/javascript"></script>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+{:infer-externs true, :output-dir "docs/public/cljs-out/dev", :optimizations :whitespace, :aot-cache false, :output-to "docs/public/cljs-out/dev-main.js", :asset-path "/cljs-out/dev", :pseudo-names true, :main example.core, :pretty-print true}
